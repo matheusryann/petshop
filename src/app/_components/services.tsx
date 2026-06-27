@@ -83,7 +83,7 @@ export function Services() {
             <div className="flex">
               {services.map((item, index) => (
                 <div
-                  className="flex[0_0_100%] min-w-0 md: flex-[0_0_calc(100%/3)] px-3"
+                  className="flex-[0_0_100%] min-w-0 md: flex-[0_0_calc(100%/3)] px-3"
                   key={index}
                 >
                   <article className="bg-[#1e293b] text-white rounded-2xl space-y-6 p-6 h-full flex flex-col">

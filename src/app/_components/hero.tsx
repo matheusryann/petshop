@@ -2,6 +2,7 @@ import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import Image from 'next/image';
 import dogImg from '../../../public/bg-hero.png'
 import catHero from '../../../public/cat-hero.png'
+import dogHero from '../../../public/hero-dog.webp'
 
 export function Hero() {
   return (
@@ -59,7 +60,7 @@ export function Hero() {
 
         <div className="hidden md:block h-full relative">
           <Image
-            src={dogImg}
+            src={dogHero}
             alt="Foto do Cachorro"
             className="object-contain"
             fill
