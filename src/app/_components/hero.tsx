@@ -1,7 +1,7 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import Image from 'next/image';
-import dogImg from '../../public/images/dog-hero.png'
-import catHero from '../../public/images/cat-hero.png'
+import dogImg from '../../../public/bg-hero.png'
+import catHero from '../../../public/cat-hero.png'
 
 export function Hero() {
   return (
@@ -32,7 +32,7 @@ export function Hero() {
             felicidade do seu amigo de quatro patas.
           </p>
             <a href="#"
-            className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit"
+            className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit hover:bg-green-600 transition-colors gap-2"
             >
                 <WhatsappLogo className="w-5 h-5 gap-2" />
                 Contato via WhatsApp
@@ -48,7 +48,7 @@ export function Hero() {
               <Image
                 src={catHero}
                 alt="Foto do Gato"
-                fill
+                className="object-fill"
                 quality={100}
               />
                </div>
@@ -61,9 +61,9 @@ export function Hero() {
           <Image
             src={dogImg}
             alt="Foto do Cachorro"
+            className="object-contain"
             fill
             sizes="(max-width: 768px) 0vw, 50vw"
-            className="object-contain"
             quality={100}
             priority
           />

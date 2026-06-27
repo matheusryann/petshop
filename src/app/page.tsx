@@ -1,12 +1,14 @@
+import { Hero } from "./_components/hero";
+import { About } from "./_components/about";
+
 
 
 export default function Home() {
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        BEM VINDO A HOME
-      </h1>
-    </div>
+    <main>
+      <Hero />
+      <About />
+    </main>
   )
 }

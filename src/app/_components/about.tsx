@@ -1,0 +1,58 @@
+import Image from "next/image";
+import about1 from "../../../public/about-1.png";
+import about2 from "../../../public/about-2.png";
+import { Check } from "lucide-react";
+
+export function About() {
+  return (
+    <section className="bg-[#FDF6Ec] py-16">
+      <div className="container mx-auto grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative">
+          <div className="relative w-full h-[400px] lg:w-[500px] h-[500px] rounded-lg border-white overflow-hidden">
+            <Image
+              src={about1}
+              alt="Foto de um cachorro"
+              fill
+              priority
+              quality={100}
+              className="object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+
+          <div className="absolute w-40 h-40 right-4 -bottom-8 rounded-3xl overflow-hidden border-2 border-white">
+            <Image
+              src={about2}
+              alt="Foto de um gato"
+              fill
+              priority
+              quality={100}
+            />
+          </div>
+        </div>
+
+        <div className="space-y-6 mt-14">
+          <h2 className="text-4xl font-bold">Sobre Nós</h2>
+          <p>
+            Somos uma loja especializada em produtos e serviços para animais de
+            estimação. Nosso objetivo é oferecer o melhor atendimento e produtos
+            de qualidade para os seus pets.
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2">
+              <Check className="text-red-500" />
+              Aberto desde 2008
+            </li>
+            <li className="flex items-center gap-2">
+              <Check className="text-red-500" />
+              Equipe com mais de 10 veterinários especializados
+            </li>
+            <li className="flex items-center gap-2">
+              <Check className="text-red-500" />
+              Qualidade é nossa prioridade. Mais de 1000 clientes satisfeitos
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
