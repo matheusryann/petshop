@@ -27,22 +27,22 @@ export function Hero() {
 
         <div className="space-y-6 ">
 
-          <h1 data-aos="fade-down" className="text-3xl md:text-4xl font-bold leading-10">Seu pet merece cuidado, carinho e atenção especial</h1>
-          <p data-aos="fade-right" className="lg:text-lg">
+          <h1 data-aos="fade-down" data-aos-delay="100" className="text-3xl md:text-4xl font-bold leading-10">Seu pet merece cuidado, carinho e atenção especial</h1>
+          <p data-aos="fade-right" data-aos-delay="200" className="lg:text-lg">
             Oferecemos os melhores serviços para garantir o bem-estar e a
             felicidade do seu amigo de quatro patas.
           </p>
             <a href="#"
             target='_blank'
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-delay="1000"
             className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit hover:bg-green-600 transition-colors gap-2"
             >
                 <WhatsappLogo className="w-5 h-5 gap-2" />
                 Contato via WhatsApp
             </a>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400">
             <p className="text-sm mb-4">
                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b> de desconto na primeira compra.
             </p>
@@ -61,7 +61,7 @@ export function Hero() {
 
         </div>
 
-        <div className="hidden md:block h-full relative">
+        <div className="hidden md:block h-full relative" data-aos="fade-left" data-aos-delay="250">
           <Image
             src={dogHero}
             alt="Foto do Cachorro"

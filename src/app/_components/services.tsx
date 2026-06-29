@@ -76,7 +76,7 @@ export function Services() {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8">Nossos Serviços</h2>
+        <h2 className="text-4xl font-bold mb-8" data-aos="fade-up" data-aos-delay="100">Nossos Serviços</h2>
 
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
@@ -85,6 +85,8 @@ export function Services() {
                 <div
                   className="flex-[0_0_100%] min-w-0 md: flex-[0_0_calc(100%/3)] px-3"
                   key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 120}
                 >
                   <article className="bg-[#1e293b] text-white rounded-2xl space-y-6 p-6 h-full flex flex-col">
                     <div className="flex-1 flex items-start justify-between">

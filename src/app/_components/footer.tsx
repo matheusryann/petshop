@@ -22,13 +22,13 @@ export function Footer() {
             <div className='container mx-auto px-4'>
 
                 <div className='border-b border-white/20 pb-8'>
-                    <h4 className='text-center font-bold text-3xl mb-8'>
+                    <h4 className='text-center font-bold text-3xl mb-8' data-aos="fade-up" data-aos-delay="100">
                         Marcas que trabalhamos
                     </h4>
 
                 <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
                     {brands.map((item, index) => (
-                        <div key={index} className='bg-white rounded-lg p-4 flex items-center justify-center' >
+                        <div key={index} className='bg-white rounded-lg p-4 flex items-center justify-center' data-aos="fade-up" data-aos-delay={140 + index * 70}>
                             <Image
                             src={item.logo}
                             alt={item.name}
@@ -63,7 +63,7 @@ export function Footer() {
                     </a>
                 </div>
 
-                <div>
+                <div data-aos="fade-up" data-aos-delay="260">
                     <h3 className='text-2xl font-semibold mb-2'>
                         Contatos
                     </h3>
@@ -73,7 +73,7 @@ export function Footer() {
                 
                 </div>
 
-                 <div>
+                 <div data-aos="fade-up" data-aos-delay="340">
                     <h3 className='text-2xl font-semibold mb-2'>
                         Redes Sociais
                     </h3>

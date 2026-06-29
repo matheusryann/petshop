@@ -53,7 +53,7 @@ export function Testimonials() {
       <section className="bg-[#FFD449] py-16">
       <div className="container mx-auto px-4">
 
-        <h2 className="text-4xl text-center font-bold mb-8">Depoimentos dos nossos Clientes</h2>
+        <h2 className="text-4xl text-center font-bold mb-8" data-aos="fade-up" data-aos-delay="100">Depoimentos dos nossos Clientes</h2>
 
         <div className="relative max-w-4xl mx-auto">
 
@@ -63,6 +63,8 @@ export function Testimonials() {
                 <div
                   className="flex-[0_0_100%] min-w-0 px-3"
                   key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 140}
                 >
                   <article className="bg-[#1e293b] text-white rounded-2xl space-y-6 p-6 h-full flex flex-col">
                     <div className="flex flex-col items-center text-center space-y-4">
