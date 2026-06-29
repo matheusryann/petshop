@@ -109,6 +109,7 @@ export function Services() {
                     <a
                       className="flex items-center justify-center gap-2 text-sm  hover:text-yellow-500 hover:scale-[1.01] transition-all duration-200"
                       href="#"
+                      target='_blank'
                     >
                       <WhatsappLogo className="w-5 h-5" />
                       Contato via WhatsApp

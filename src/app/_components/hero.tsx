@@ -27,12 +27,15 @@ export function Hero() {
 
         <div className="space-y-6 ">
 
-          <h1 className="text-3xl md:text-4xl font-bold leading-10">Seu pet merece cuidado, carinho e atenção especial</h1>
-          <p className="lg:text-lg">
+          <h1 data-aos="fade-down" className="text-3xl md:text-4xl font-bold leading-10">Seu pet merece cuidado, carinho e atenção especial</h1>
+          <p data-aos="fade-right" className="lg:text-lg">
             Oferecemos os melhores serviços para garantir o bem-estar e a
             felicidade do seu amigo de quatro patas.
           </p>
             <a href="#"
+            target='_blank'
+            data-aos="fade-up"
+            data-aos-delay="500"
             className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit hover:bg-green-600 transition-colors gap-2"
             >
                 <WhatsappLogo className="w-5 h-5 gap-2" />

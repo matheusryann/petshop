@@ -80,16 +80,19 @@ export function Footer() {
                     <div className='flex gap-2 items-center'>
                         <a
                         href='#'
+                        target='_blank'
                         >
                         <FacebookLogoIcon className='h-8 w-8 cursor-pointer hover:text-gray-300 ' />
                         </a>
                         <a
                         href='#'
+                        target='_blank'
                         >
                         <InstagramLogoIcon className='h-8 w-8 cursor-pointer hover:text-gray-300' />
                         </a>
                         <a
                         href='#'
+                        target='_blank'
                         >
                         <TwitterLogoIcon className='h-8 w-8 cursor-pointer hover:text-gray-300' />
                         </a>

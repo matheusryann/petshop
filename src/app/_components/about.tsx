@@ -9,7 +9,7 @@ export function About() {
     <section className="bg-[#FDF6Ec] py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="relative">
+        <div className="relative" data-aos-delay="500" data-aos="fade-up-right">
           <div className="relative w-full h-[400px] rounded-lg border-white overflow-hidden">
             <Image
               src={about1}
@@ -32,7 +32,7 @@ export function About() {
           </div>
         </div>
 
-        <div className="space-y-6 mt-14">
+        <div className="space-y-6 mt-14" data-aos-delay="300" data-aos="fade-up-left">
           <h2 className="text-4xl font-bold">Sobre Nós</h2>
           <p>
             Somos uma loja especializada em produtos e serviços para animais de
@@ -57,6 +57,7 @@ export function About() {
             <a 
           className="bg-[#E24E42] rounded-md text-white flex items-center justify-center w-fit gap-2 px-2 py-2 hover:bg-red-700 hover:scale-[1.04] transition-all duration-500"
           href="#"
+          target='_blank'
           >
             <WhatsappLogo className="text-white" />
             Contato via WhatsApp
